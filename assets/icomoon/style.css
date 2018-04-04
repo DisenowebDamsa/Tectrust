@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?gdrpiq');
+  src:  url('fonts/icomoon.eot?gdrpiq#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?gdrpiq') format('truetype'),
+    url('fonts/icomoon.woff?gdrpiq') format('woff'),
+    url('fonts/icomoon.svg?gdrpiq#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-telephone:before {
+  content: "\e900";
+}
+.icon-location:before {
+  content: "\e901";
+}
+.icon-linkedin:before {
+  content: "\e902";
+}
+.icon-twitter:before {
+  content: "\e903";
+}
+.icon-facebook:before {
+  content: "\e904";
+}
+.icon-cliente:before {
+  content: "\e905";
+}
+.icon-contrato:before {
+  content: "\e906";
+}
+.icon-estudios:before {
+  content: "\e907";
+}
+.icon-ubicacion:before {
+  content: "\e908";
+}
+.icon-videos:before {
+  content: "\e909";
+}
+.icon-fotos:before {
+  content: "\e90a";
+}
+.icon-referencias:before {
+  content: "\e90b";
+}
+.icon-antecedentes:before {
+  content: "\e90c";
+}
+.icon-social:before {
+  content: "\e90d";
+}
+.icon-salud:before {
+  content: "\e90e";
+}
+.icon-habitos:before {
+  content: "\e90f";
+}
+.icon-documentos:before {
+  content: "\e910";
+}
+.icon-usuario:before {
+  content: "\e911";
+}
