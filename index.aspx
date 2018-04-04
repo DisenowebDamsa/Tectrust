@@ -35,7 +35,7 @@
                     <li>
                         <div class="dropdown">
                           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: none; border: none">
-                            <span>CONTÁCTANOS</span>
+                            <span style="color: white">CONTÁCTANOS</span>
                           </button>
                          <form class="dropdown-menu p-4" style="background: #0f1b33;">
                           <div class="form-group">
