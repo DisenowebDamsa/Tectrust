@@ -28,7 +28,7 @@
             
             <div class="menu text-center hidden-sm-down">
             	<ul>
-                	<li><a href="" class="active">INICIO</a></li>
+                	<li><a href="" class="active">INICIOS</a></li>
                     <li><a href="">SERVICIOS</a></li>
                     <li><a href="">FILOSOFÍA</a></li>
                     <li>
