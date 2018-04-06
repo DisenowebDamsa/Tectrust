@@ -1,23 +1,25 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="index.aspx.vb" Inherits="WA201709131117Tectrust.index_180405" %>
+<%@ Register src="~/ControlesPers/Ctrl_Login.ascx" tagname="Ctrl_Login" tagprefix="uc1" %>
+
+<!DOCTYPE html>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
 <title>TecTrust</title>
 
-<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="assets/icomoon/style.css">
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="assets/icomoon/style.css"/>
 
-
-<link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" href="css/responsive.css">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css"/>
+<link rel="stylesheet" href="css/responsive.css"/>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 
 </head>
-
 <body>
 <div class="slidder">
     <div class="header">
@@ -35,39 +37,44 @@
                     <li>
                         <div class="dropdown">
                           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: none; border: none">
-                            <span style="color: white">CONTÁCTANOS</span>
+                            <span>CONTÁCTANOS</span>
                           </button>
                          <form class="dropdown-menu p-4" style="background: #0f1b33;">
-                          <div class="form-group">
-                            <label for="exampleDropdownFormEmail2" style="color: white">Nombre y apellido</label>
-                            <input type="email" class="form-control" id="contacto_nombre" placeholder="nombre y apellido">
-                          </div>
-                          <div class="form-group">
-                            <label for="exampleDropdownFormPassword2" style="color: white">Empresa</label>
-                            <input type="password" class="form-control" id="contacto_Empresa" placeholder="empresa">
-                          </div>
-                         <div class="form-group">
-                            <label for="exampleDropdownFormEmail2" style="color: white">Correo electronico</label>
-                            <input type="email" class="form-control" id="contacto_correo" placeholder="correo@ejemplo.com">
-                          </div>
-                          <div class="form-group">
-                            <label for="exampleDropdownFormEmail2" style="color: white">Telefono</label>
-                            <input type="email" class="form-control" id="contaco_telefono" placeholder="123467890">
-                          </div>
+                              <div class="form-group">
+                                <label for="exampleDropdownFormEmail2" style="color: white">Nombre y apellido</label>
+                                <input type="email" class="form-control" id="contacto_nombre" placeholder="nombre y apellido">
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleDropdownFormPassword2" style="color: white">Empresa</label>
+                                <input type="password" class="form-control" id="contacto_Empresa" placeholder="empresa">
+                              </div>
+                             <div class="form-group">
+                                <label for="exampleDropdownFormEmail2" style="color: white">Correo electronico</label>
+                                <input type="email" class="form-control" id="contacto_correo" placeholder="correo@ejemplo.com">
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleDropdownFormEmail2" style="color: white">Telefono</label>
+                                <input type="email" class="form-control" id="contaco_telefono" placeholder="123467890">
+                              </div>
 
-                          <button type="submit" class="btn btn-primary" style="background: #d1e028;border: none;width: 100%">Enviar datos</button>
+                              <button type="submit" class="btn btn-primary" style="background: #d1e028;border: none;width: 100%">Enviar datos</button>
                         </form>
-                        </div>
+                       </div>
                     </li>
+                       
+
                     <!--fin de la seccion de codigo del pop up de contacto-->
                     <!--popup del inicio de sesion-->
                     <li>
                     	<div class="dropdown">
-						  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: none; border: none">
+						  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: none; border: none">
 						  	<span class="icon-usuario"></span>
 						  </button>
-						 <form class="dropdown-menu p-4" style="background: #0f1b33;">
-						  <div class="form-group">
+						 <form runat="server" class="dropdown-menu p-4" style="background: #0f1b33;">
+                            <div id="ControlLogin" class="form-group" style="width:150px">
+	                            <uc1:Ctrl_Login ID="Ctrl_Login1" runat="server" uc_TamañoTextBox="140" u_PaginaCapturista="Capturista/FiltraCandidatos.aspx" uc_PaginaCliente="Cte/Principal.aspx" uc_PaginaRenovacion="/Administrador/RenovarEstudios.aspx" uc_PaginaAdministrador="~/tradicionales/MenuPrincipal.aspx" />
+                            </div>
+<%--						  <div class="form-group">
 						    <label for="exampleDropdownFormEmail2" style="color: white">Usuario</label>
 						    <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="correo@ejemplo.com">
 						  </div>
@@ -76,7 +83,7 @@
 						    <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
 						  </div>
 						 
-						  <button type="submit" class="btn btn-primary" style="background: #d1e028;border: none;width: 100%">Log in</button>
+						  <button type="submit" class="btn btn-primary" style="background: #d1e028;border: none;width: 100%">Log in</button>--%>
 						</form>
 						</div>
 					</li>
@@ -134,47 +141,7 @@
                 <div class="line-style-light">¡TENEMOS LA SOLUCIÓN!</div>
                 <!--seccion de codigo para el boton de solicitar una prueba-->
                 <div class="line-style-small">Conoce la plataforma online que lo hará posible</div>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="background: none; color: black">Solicita una prueba</button>
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Solicita una prueba</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <form>
-                          <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Nombre y apellido:</label>
-                            <input type="text" class="form-control" id="recipient-nombre">
-                          </div>
-                          <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Empresa</label>
-                            <input type="text" class="form-control" id="recipient-empresa">
-                          </div>
-                          <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Correo electronico:</label>
-                            <input type="text" class="form-control" id="recipient-email">
-                          </div>
-                          <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Telefono:</label>
-                            <input type="text" class="form-control" id="recipient-telefono">
-                          </div>
-                          <div class="form-group">
-                            <label for="message-text" class="col-form-label">Message:</label>
-                            <textarea class="form-control" id="message-text"></textarea>
-                          </div>
-                        </form>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                        <button type="button" class="btn btn-primary">Enviar</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <button type="button" class="btn btn-outline-primary inverse" data-toggle="modal" data-target="#ModalPrueba" data-whatever="@mdo" style="background: none; color: black">Solicita una prueba</button>
                 <!-- termina en bloque de codigo de solicita una prueba-->
             </div>
         </div>
@@ -422,47 +389,7 @@
 <div class="container text-center">
 	
 		<div class="title color-blue">Conoce la plataforma online que lo hará posible</div>
-         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Solicita una prueba</button>
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Solicita una prueba</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <form>
-                          <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Nombre y apellido:</label>
-                            <input type="text" class="form-control" id="recipient-nombre">
-                          </div>
-                          <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Empresa</label>
-                            <input type="text" class="form-control" id="recipient-empresa">
-                          </div>
-                          <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Correo electronico:</label>
-                            <input type="text" class="form-control" id="recipient-email">
-                          </div>
-                          <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Telefono:</label>
-                            <input type="text" class="form-control" id="recipient-telefono">
-                          </div>
-                          <div class="form-group">
-                            <label for="message-text" class="col-form-label">Message:</label>
-                            <textarea class="form-control" id="message-text"></textarea>
-                          </div>
-                        </form>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Send message</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+         <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#ModalPrueba" data-whatever="@mdo">Solicita una prueba</button>
 </div>
 </div>
 
@@ -500,5 +427,41 @@
     </div>
 </footer>
 
+<%--VENTANAS MODALES--%>
+        <div class="modal fade" id="ModalPrueba" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle" >Solicita una prueba</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Nombre"/>
+                  <br/>
+                  <input type="text" class="form-control" placeholder="Empresa"/>
+                  <br/>
+                  <input type="email" class="form-control" placeholder="empresa@email.com"/>
+                  <br/>
+                  <input type="tel" class="form-control" placeholder="telefono"/>
+                  <br/>
+                   <label  for="txtMensaje" style="color: black">Mensaje:</label>
+                   <br/>
+                   <textarea id="txtMensaje" rows="4" cols="50" class="form-control"></textarea>
+                  
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn  btn-outline-danger" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-outline-primary inverse">Enviar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    
+<script type="text/javascript" src="jScripts/MD5.js"></script>
 </body>
 </html>
