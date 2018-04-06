@@ -37,7 +37,7 @@
                     <li>
                         <div class="dropdown">
                           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: none; border: none">
-                            <span>CONTÁCTANOS</span>
+                            <span class="contacto">CONTÁCTANOS</span>
                           </button>
                          <form class="dropdown-menu p-4" style="background: #0f1b33;">
                               <div class="form-group">
@@ -74,16 +74,6 @@
                             <div id="ControlLogin" class="form-group" style="width:150px">
 	                            <uc1:Ctrl_Login ID="Ctrl_Login1" runat="server" uc_TamañoTextBox="140" u_PaginaCapturista="Capturista/FiltraCandidatos.aspx" uc_PaginaCliente="Cte/Principal.aspx" uc_PaginaRenovacion="/Administrador/RenovarEstudios.aspx" uc_PaginaAdministrador="~/tradicionales/MenuPrincipal.aspx" />
                             </div>
-<%--						  <div class="form-group">
-						    <label for="exampleDropdownFormEmail2" style="color: white">Usuario</label>
-						    <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="correo@ejemplo.com">
-						  </div>
-						  <div class="form-group">
-						    <label for="exampleDropdownFormPassword2" style="color: white">Contraseña</label>
-						    <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
-						  </div>
-						 
-						  <button type="submit" class="btn btn-primary" style="background: #d1e028;border: none;width: 100%">Log in</button>--%>
 						</form>
 						</div>
 					</li>
@@ -122,7 +112,7 @@
                         </div>
                         <div class="item-menu-mobile text-uppercase">
                             <div class="txt-item-menu-mobile">
-                                <a href=""><div class="valign"><span>Contáctanos</span></div></a>
+                                <a href=""><div class="valign"><span class="contacto">Contáctanos</span></div></a>
                             </div>
                         </div>
 					</div>
@@ -141,7 +131,7 @@
                 <div class="line-style-light">¡TENEMOS LA SOLUCIÓN!</div>
                 <!--seccion de codigo para el boton de solicitar una prueba-->
                 <div class="line-style-small">Conoce la plataforma online que lo hará posible</div>
-                <button type="button" class="btn btn-outline-primary inverse" data-toggle="modal" data-target="#ModalPrueba" data-whatever="@mdo" style="background: none; color: black">Solicita una prueba</button>
+                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#ModalPrueba" data-whatever="@mdo">Solicita una prueba</button>
                 <!-- termina en bloque de codigo de solicita una prueba-->
             </div>
         </div>
