@@ -331,7 +331,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-4">
+        <div class="col-12 col-ms-12 col-md-4">
             <div class="box-logro">
             <div class="icono-logro">
                 <span class="icon-estudios"></span>
@@ -348,7 +348,7 @@
             </div>
         </div>
 
-        <div class="col-4">
+        <div class="col-12 col-ms-12 col-md-4">
             <div class="box-logro">
             <div class="icono-logro">
                 <span class="icon-contrato"></span>
@@ -365,7 +365,7 @@
             </div>
         </div>
 
-        <div class="col-4">
+        <div class="col-12 col-ms-12 col-md-4">
             <div class="box-logro">
             <div class="icono-logro">
                 <span class="icon-cliente"></span>

@@ -24,6 +24,9 @@ img{
 .color-white {
 	color: #fff;
 }
+.color-black{
+	color: black;
+}
 .slidder {
 	width:100%;
 	height:100vh;
@@ -36,6 +39,7 @@ img{
 	height: 90px;
 	background:rgba(48,71,105,.6); 
 	position: fixed;
+	z-index: 2;
 }
 .logo {
 	float: left;
@@ -261,4 +265,15 @@ footer ul li [class^="icon-"], footer ul li [class*=" icon-"] {
 }
 .dropdown-menu{
 	min-width: 17rem;
+}
+.banner_filosofia{
+	width: 100%;
+	
+	background-size: cover;
+	padding-top: 50px;
+}
+.slidder_servicios{
+	width: 100%;
+	height: 100vh;
+	position: relative;
 }

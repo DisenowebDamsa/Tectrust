@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?gdrpiq');
-  src:  url('fonts/icomoon.eot?gdrpiq#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?gdrpiq') format('truetype'),
-    url('fonts/icomoon.woff?gdrpiq') format('woff'),
-    url('fonts/icomoon.svg?gdrpiq#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?akbieg');
+  src:  url('fonts/icomoon.eot?akbieg#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?akbieg') format('truetype'),
+    url('fonts/icomoon.woff?akbieg') format('woff'),
+    url('fonts/icomoon.svg?akbieg#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,33 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-uniE903:before {
+  content: "\e903";
+}
+.icon-uniE905:before {
+  content: "\e905";
+}
+.icon-uniE908:before {
+  content: "\e908";
+}
+.icon-uniE90B:before {
+  content: "\e90b";
+}
+.icon-uniE90C:before {
+  content: "\e90c";
+}
+.icon-uniE90D:before {
+  content: "\e90d";
+}
+.icon-uniE90E:before {
+  content: "\e90e";
+}
+.icon-uniE911:before {
+  content: "\e911";
+}
+.icon-uniE912:before {
+  content: "\e912";
+}
 .icon-telephone:before {
   content: "\e900";
 }
@@ -31,50 +58,53 @@
   content: "\e901";
 }
 .icon-linkedin:before {
-  content: "\e902";
-}
-.icon-twitter:before {
-  content: "\e903";
-}
-.icon-facebook:before {
   content: "\e904";
 }
-.icon-cliente:before {
-  content: "\e905";
-}
-.icon-contrato:before {
+.icon-twitter:before {
   content: "\e906";
 }
-.icon-estudios:before {
+.icon-facebook:before {
   content: "\e907";
 }
-.icon-ubicacion:before {
-  content: "\e908";
-}
-.icon-videos:before {
+.icon-cliente:before {
   content: "\e909";
 }
-.icon-fotos:before {
+.icon-contrato:before {
   content: "\e90a";
 }
-.icon-referencias:before {
-  content: "\e90b";
-}
-.icon-antecedentes:before {
-  content: "\e90c";
-}
-.icon-social:before {
-  content: "\e90d";
-}
-.icon-salud:before {
-  content: "\e90e";
-}
-.icon-habitos:before {
+.icon-estudios:before {
   content: "\e90f";
 }
-.icon-documentos:before {
+.icon-ubicacion:before {
   content: "\e910";
 }
+.icon-videos:before {
+  content: "\e913";
+}
+.icon-fotos:before {
+  content: "\e914";
+}
+.icon-referencias:before {
+  content: "\e915";
+}
+.icon-antecedentes:before {
+  content: "\e916";
+}
+.icon-social:before {
+  content: "\e917";
+}
+.icon-salud:before {
+  content: "\e918";
+}
+.icon-habitos:before {
+  content: "\e919";
+}
+.icon-documentos:before {
+  content: "\e91a";
+}
 .icon-usuario:before {
-  content: "\e911";
+  content: "\e91b";
+}
+.icon-home3:before {
+  content: "\e902";
 }
