@@ -344,6 +344,87 @@
                 </div>
     	</div>
     </div>
+    <div class="container-fluid" style="background: url(images/SocioLaboral.png);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="slogan">
+                            <div class="line-style-bold">Tectrust</div>
+                            <div class="line-style-light">SOCIO-LABORAL</div>
+                        <!--seccion de codigo para el boton de solicitar una prueba-->
+                            <div class="line-style-small">Es el estudio que te permite corroborar o verificar a través de las referencias laborales la integridad de la información del candidato, investigando una de estas dos opciones: </div><br>
+                            <div class="line-style-small">Los tres últimos empleos</div><br>
+                            <div class="line-style-small">Cinco años atrás de su vida laboral</div><br>
+                            <div class="line-style-small">Es una herramienta ágil que contrarresta la información laboral del candidato, y así tomar la decisión correcta en la selección de personal.</div>            
+                        <!-- termina en bloque de codigo de solicita una prueba-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+     <div class="container-fluid" style="background: #0f1b33">
+        <div class="container">
+            <div class="row">
+            <div class="row align-items-center" style="margin-top: 4%">
+                    <div class="col-lg-4">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4">
+                                <div class="icono">
+                                    <div class="border-icono">
+                                         <div class="valign">
+                                            <span class="icon-usuario"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="text-icono color-white">Perfil del candidato</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4">
+                                <div class="icono">
+                                    <div class="border-icono">
+                                        <div class="valign">
+                                            <span class="icon-documentos"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="text-icono color-white">Referencia laboral de los ultimos 3 empleos</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4">
+                                <div class="icono">
+                                    <div class="border-icono">
+                                        <div class="valign">
+                                            <span class="icon-documentos"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="text-icono color-white">Cinco años atrás de su vida laboral</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-4"  style="margin-bottom: 4%">
+                            <button type="button" class="btn btn-outline-primary inverse" data-toggle="modal" data-target="#ModalPrueba" data-whatever="@mdo" style="background: none; color: white">SOLICITA UNA COTIZACIÓN</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid" style="background: url(images/SocioEscolar.png);">
     	<div class="container">
     		<div class="row">
