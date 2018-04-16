@@ -1,4 +1,4 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="index.aspx.vb" Inherits="WA201709131117Tectrust.index_180405" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeFile="index.aspx.vb" Inherits="index" %>
 <%@ Register src="~/ControlesPers/Ctrl_Login.ascx" tagname="Ctrl_Login" tagprefix="uc1" %>
 
 <!DOCTYPE html>
@@ -31,13 +31,13 @@
             <div class="menu text-center hidden-sm-down">
             	<ul>
                 	<li><a href="" class="active">INICIO</a></li>
-                    <li><a href="">SERVICIOS</a></li>
+                    <li><a href="servicios.aspx">SERVICIOS</a></li>
                     <li><a href="">FILOSOFÍA</a></li>
                     <!--inicio de pop up para la seccion de contacto-->
                     <li>
                         <div class="dropdown">
                           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: none; border: none">
-                            <span class="contacto">CONTÁCTANOS</span>
+                            <span style="color:white">CONTÁCTANOS</span>
                           </button>
                          <form class="dropdown-menu p-4" style="background: #0f1b33;">
                               <div class="form-group">
@@ -72,7 +72,7 @@
 						  </button>
 						 <form runat="server" class="dropdown-menu p-4" style="background: #0f1b33;">
                             <div id="ControlLogin" class="form-group" style="width:150px">
-	                            <uc1:Ctrl_Login ID="Ctrl_Login1" runat="server" uc_TamañoTextBox="140" u_PaginaCapturista="Capturista/FiltraCandidatos.aspx" uc_PaginaCliente="Cte/Principal.aspx" uc_PaginaRenovacion="/Administrador/RenovarEstudios.aspx" uc_PaginaAdministrador="~/tradicionales/MenuPrincipal.aspx" />
+	                            <uc1:Ctrl_Login ID="Ctrl_Login1" runat="server" uc_TamañoTextBox="140" u_PaginaCapturista="Capturista/FiltraCandidatos.aspx" uc_PaginaCliente="Cte/Principal.html" uc_PaginaRenovacion="/Administrador/RenovarEstudios.aspx" uc_PaginaAdministrador="~/tradicionales/MenuPrincipal.html" />
                             </div>
 						</form>
 						</div>
@@ -112,7 +112,7 @@
                         </div>
                         <div class="item-menu-mobile text-uppercase">
                             <div class="txt-item-menu-mobile">
-                                <a href=""><div class="valign"><span class="contacto">Contáctanos</span></div></a>
+                                <a href=""><div class="valign"><span>Contáctanos</span></div></a>
                             </div>
                         </div>
 					</div>
@@ -169,7 +169,7 @@
                     </div>
                 </div>
                 <div class="col-lg-7">
-                    <div class="text-icono color-white">Comprobante de estudios y laborales</div>
+                    <div class="text-icono color-white">Documentos Personales</div>
                 </div>
                 </div>
             </div>
@@ -186,7 +186,7 @@
                     </div>
                 </div>
                 <div class="col-lg-7">
-                    <div class="text-icono color-white">Como te mantienes saludable</div>
+                    <div class="text-icono color-white">Hábitos de Higiene</div>
                 </div>
                 </div>
             </div>
@@ -203,7 +203,7 @@
                     </div>
                 </div>
                 <div class="col-lg-7">
-                    <div class="text-icono color-white">Enfermedades o padecimientos</div>
+                    <div class="text-icono color-white">Salud</div>
                 </div>
                 </div>
             </div>
@@ -220,7 +220,7 @@
                     </div>
                 </div>
                 <div class="col-lg-7">
-                    <div class="text-icono color-white">Actividades personales</div>
+                    <div class="text-icono color-white">Comportamiento Social</div>
                 </div>
                 </div>
             </div>
@@ -237,7 +237,7 @@
                     </div>
                 </div>
                 <div class="col-lg-7">
-                    <div class="text-icono color-white">Integrantes de tu familia</div>
+                    <div class="text-icono color-white">Antecedentes Familiares</div>
                 </div>
                 </div>
             </div>
@@ -254,7 +254,7 @@
                     </div>
                 </div>
                 <div class="col-lg-7">
-                    <div class="text-icono color-white">Valores como familia</div>
+                    <div class="text-icono color-white">Referencias Personales</div>
                 </div>
                 </div>
             </div>
@@ -288,7 +288,7 @@
                     </div>
                 </div>
                 <div class="col-lg-7">
-                    <div class="text-icono color-white">Situación del entorno</div>
+                    <div class="text-icono color-white">Videos en sitio</div>
                 </div>
                 </div>
             </div>
@@ -305,7 +305,7 @@
                     </div>
                 </div>
                 <div class="col-lg-7">
-                    <div class="text-icono color-white">Ubicación en Google maps</div>
+                    <div class="text-icono color-white">Ubicación Domiciliaria </div>
                 </div>
                 </div>
             </div>
@@ -317,51 +317,51 @@
 <div class="container">
 	<div class="row">
     	<div class="col-12 text-center">
-    		<div class="title text-center color-white">En TrucTrust hemos logrado</div>
+    		<div class="title text-center color-white">En TrecTrust hemos logrado</div>
         </div>
     </div>
     <div class="row">
-        <div class="col-4">
+        <div class="col-12 col-ms-12 col-md-4">
+            <div class="box-logro">
+            <div class="icono-logro">
+                <span class="icon-contrato "></span>
+            </div>
+            <div class="logro-line1">
+                MAS DE 
+            </div>
+            <div class="logro-line2">
+                45,000
+            </div>
+        	<div class="logro-line3">
+                 ESTUDIOS REALIZADOS
+            </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-ms-12 col-md-4">
             <div class="box-logro">
             <div class="icono-logro">
                 <span class="icon-estudios"></span>
             </div>
             <div class="logro-line1">
-                Más de
+                con Más de
             </div>
             <div class="logro-line2">
-                24,264
-            </div>
-        	<div class="logro-line3">
-                Estudios realizados
-            </div>
-            </div>
-        </div>
-
-        <div class="col-4">
-            <div class="box-logro">
-            <div class="icono-logro">
-                <span class="icon-contrato"></span>
-            </div>
-            <div class="logro-line1">
-                Cerca de
-            </div>
-            <div class="logro-line2">
-                20,500
+                 &nbsp; 10 
             </div>
             <div class="logro-line3">
-                Contratos de confianza
+                 Años De Experiencia
             </div>
             </div>
         </div>
 
-        <div class="col-4">
+        <div class="col-12 col-ms-12 col-md-4">
             <div class="box-logro">
             <div class="icono-logro">
                 <span class="icon-cliente"></span>
             </div>
             <div class="logro-line1">
-                Contamos con
+                MAS DE 
             </div>
             <div class="logro-line2">
                 850
@@ -394,8 +394,8 @@
 
                 <div>
                     <div class="inline-footer"><span class="icon-location"></span></div>
-                    <div class="inline-footer">Av. Chapultepec No. 15 Piso 21 Interior 1. CP44600<br>
-                    Col. Ladrón de Guevara. Guadalajara, Jal, México</div>
+                    <div class="inline-footer">Av. Chapultepec No. 15 Piso 21 Interior 1 • C.P. 44600 <br>
+                    Col. Col. Ladrón de Guevara • Guadalajara, Jal., México</div>
                 </div>
             </div>
             
@@ -418,7 +418,7 @@
 </footer>
 
 <%--VENTANAS MODALES--%>
-        <div class="modal fade" id="ModalPrueba" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal fade " id="ModalPrueba" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
