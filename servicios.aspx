@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="servicios.aspx.cs" Inherits="servicios" %>
-<%@ Register src="~/ControlesPers/Ctrl_Login.ascx" tagname="Ctrl_Login" tagprefix="uc1" %>
+<%@ Register src="ControlesPers/Ctrl_Login.ascx" tagname="Ctrl_Login" tagprefix="uc1" %>
 
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -28,14 +28,14 @@
             
             <div class="menu text-center hidden-sm-down">
             	<ul>
-                	<li><a href="">INICIO</a></li>
+                	<li><a href="index.aspx">INICIO</a></li>
                     <li><a href=""  class="active">SERVICIOS</a></li>
                     <li><a href="">FILOSOFÍA</a></li>
                     <!--inicio de pop up para la seccion de contacto-->
                     <li>
                         <div class="dropdown">
                           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: none; border: none">
-                            <span>CONTÁCTANOS</span>
+                            <span style="color:white; cursor:pointer;">CONTÁCTANOS</span>
                           </button>
                          <form class="dropdown-menu p-4" style="background: #0f1b33;">
                               <div class="form-group">
@@ -65,7 +65,7 @@
                     <!--popup del inicio de sesion-->
                     <li>
                     	<div class="dropdown">
-						  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: none; border: none">
+						  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: none; border: none; cursor:pointer;">
 						  	<span class="icon-usuario"></span>
 						  </button>
 						 <form runat="server" class="dropdown-menu p-4" style="background: #0f1b33;">
@@ -110,7 +110,7 @@
                         </div>
                         <div class="item-menu-mobile text-uppercase">
                             <div class="txt-item-menu-mobile">
-                                <a href=""><div class="valign"><span>Contáctanos</span></div></a>
+                                <a href=""><div class="valign"><span style="color:White;">Contáctanos</span></div></a>
                             </div>
                         </div>
 					</div>
@@ -119,7 +119,8 @@
 			</div>
         </div>
     </div>
-    <div class="container-fluid" style="background: url(images/bg-socioeconomico.jpg);">
+<%--    <div style="height:80px"></div>--%>
+    <div class="container-fluid" style="background: url(images/bg-socioeconomico.jpg);padding-top: 80px;">
     	<div class="container">
     		<div class="row">
 			<div class="col-12">

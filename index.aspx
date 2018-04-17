@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="vb" AutoEventWireup="false" CodeFile="index.aspx.vb" Inherits="index" %>
-<%@ Register src="~/ControlesPers/Ctrl_Login.ascx" tagname="Ctrl_Login" tagprefix="uc1" %>
+<%@ Register src="ControlesPers/Ctrl_Login.ascx" tagname="Ctrl_Login" tagprefix="uc1" %>
 
 <!DOCTYPE html>
 
@@ -22,7 +22,7 @@
 </head>
 <body>
 <div class="slidder">
-    <div class="header">
+    <div class="header" style="padding-top:0;">
     	<div class="container">
         	<div class="logo">
             	<img src="images/logo.png" alt="TecTrust"/>
@@ -37,7 +37,7 @@
                     <li>
                         <div class="dropdown">
                           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: none; border: none">
-                            <span style="color:white">CONTÁCTANOS</span>
+                            <span style="color:white; cursor:pointer;">CONTÁCTANOS</span>
                           </button>
                          <form class="dropdown-menu p-4" style="background: #0f1b33;">
                               <div class="form-group">
@@ -67,12 +67,12 @@
                     <!--popup del inicio de sesion-->
                     <li>
                     	<div class="dropdown">
-						  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: none; border: none">
+						  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: none; border: none; cursor:pointer;">
 						  	<span class="icon-usuario"></span>
 						  </button>
 						 <form runat="server" class="dropdown-menu p-4" style="background: #0f1b33;">
                             <div id="ControlLogin" class="form-group" style="width:150px">
-	                            <uc1:Ctrl_Login ID="Ctrl_Login1" runat="server" uc_TamañoTextBox="140" u_PaginaCapturista="Capturista/FiltraCandidatos.aspx" uc_PaginaCliente="Cte/Principal.html" uc_PaginaRenovacion="/Administrador/RenovarEstudios.aspx" uc_PaginaAdministrador="~/tradicionales/MenuPrincipal.html" />
+	                            <uc1:Ctrl_Login ID="Ctrl_Login1" runat="server" uc_TamañoTextBox="140" u_PaginaCapturista="Capturista/FiltraCandidatos.aspx" uc_PaginaCliente="Cte/Principal.html" uc_PaginaRenovacion="/Administrador/RenovarEstudios.aspx" uc_PaginaAdministrador="tradicionales/MenuPrincipal.html" />
                             </div>
 						</form>
 						</div>
